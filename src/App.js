@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './homePage/Header';
+import HomePage from './pages/HomePage';
+import Collections from './pages/Collections';
+import Cart from './pages/Cart';
+import Payment from './pages/Payment';
+import Footer from './homePage/Footer';
+import {Switch, Route} from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return(
+    <div className="m-0 p-0 box-border scroll-smooth bg-black text-white">
+      <Header />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/collections" component={Collections} />
+        <Route path="/cart" component={Cart} />
+        <Route path="/payment" component={Payment} />
+      </Switch>
+      <Footer />
     </div>
   );
 }
