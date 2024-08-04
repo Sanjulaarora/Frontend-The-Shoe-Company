@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/the-shoe-company/static/css/main.28a0531b.css",
+    "main.js": "/the-shoe-company/static/js/main.320a6f8d.js",
+    "static/media/testimonial-background.png": "/the-shoe-company/static/media/testimonial-background.5b910fb84ad6f6937519.png",
+    "static/media/how-it-works-image.png": "/the-shoe-company/static/media/how-it-works-image.d8adb5f5bf2e5a8fac1e.png",
+    "static/media/about-us-background.png": "/the-shoe-company/static/media/about-us-background.bfda7d034fe0f6b0941b.png",
+    "static/media/roadshare.png": "/the-shoe-company/static/media/roadshare.1fdaa1399feba104524a.png",
+    "static/media/white Shoe.png": "/the-shoe-company/static/media/white Shoe.8c34e5c0647c3dee5219.png",
+    "static/media/photo2.png": "/the-shoe-company/static/media/photo2.afc140f24d15dd231478.png",
+    "static/media/about-shoe-company.png": "/the-shoe-company/static/media/about-shoe-company.799e426dccaa2205027f.png",
+    "static/media/photo3.png": "/the-shoe-company/static/media/photo3.0d3c6ad89318285d0602.png",
+    "static/media/photo1.png": "/the-shoe-company/static/media/photo1.29915edf512c4d09083d.png",
+    "static/media/empty-cart.png": "/the-shoe-company/static/media/empty-cart.03d6f3ffcc8242c67136.png",
+    "static/media/shoe-company-logo.png": "/the-shoe-company/static/media/shoe-company-logo.dd1bb4e60552cafcf340.png",
+    "static/media/facebook.svg": "/the-shoe-company/static/media/facebook.d7522c778b5b9bb1f8da030646ed762d.svg",
+    "static/media/instagram.svg": "/the-shoe-company/static/media/instagram.57a40216d1b922e25ef1705e1c0debcd.svg",
+    "static/media/twitch.svg": "/the-shoe-company/static/media/twitch.244221d5ce8a1d4197ac8fc557052899.svg",
+    "index.html": "/the-shoe-company/index.html",
+    "static/media/youtube.svg": "/the-shoe-company/static/media/youtube.68ee2eb97e4e587935f596b39c806f86.svg",
+    "main.28a0531b.css.map": "/the-shoe-company/static/css/main.28a0531b.css.map",
+    "main.320a6f8d.js.map": "/the-shoe-company/static/js/main.320a6f8d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28a0531b.css",
+    "static/js/main.320a6f8d.js"
+  ]
+}
