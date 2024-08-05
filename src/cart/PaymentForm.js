@@ -20,7 +20,7 @@ const PaymentForm = () => {
   return (
     <>
       <section className="flex justify-center px-6 md:px-12 max-w-[1440px] mx-auto h-screen">
-        <section className="mt-40 bg-slate-700 border-2 border-solid border-white rounded-md h-[350px] media450:h-[400px] media830:h-[520px] w-[280px] media450:w-[360px] media830:w-[430px]">
+        <section className="mt-40 bg-slate-700 border-2 border-solid border-white rounded-md h-[350px] media450:h-[400px] media830:h-[520px] w-[290px] media450:w-[360px] media830:w-[430px]">
           <form className="flex flex-col justify-center itms-center space-y-3 media830:space-y-4 p-2 media830:p-3" onSubmit={ handleCheckoutSubmit }>
             <h1 className="text-center font-bold text-md media450:text-2xl media830:text-3xl mt-2"> Payment Checkout</h1>
             <div className="flex justify-evenly mt-3 mx-[7px] media450:mx-0">
