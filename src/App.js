@@ -11,7 +11,7 @@ function App() {
     <div className="m-0 p-0 box-border scroll-smooth bg-black text-white">
       <Header />
       <Switch>
-        <Route exact path="/" component={HomePage} />
+        <Route exact path="/the-shoe-company" component={HomePage} />
         <Route exact path="/collections" component={Collections} />
         <Route path="/cart" component={Cart} />
         <Route path="/payment" component={Payment} />
