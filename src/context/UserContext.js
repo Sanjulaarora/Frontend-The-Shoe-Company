@@ -15,7 +15,8 @@ export const UserProvider = ({children}) => {
     const [pincode, setPincode] = useState('');
     const [totalAmount, setTotalAmount] = useState('');
 
-    const handleCheckoutSubmit = () => {
+    const handleCheckoutSubmit = (e) => {
+        e.preventDefault();
         setFirstName('');
         setLastName('');
         setEmail('');

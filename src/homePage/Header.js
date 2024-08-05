@@ -15,7 +15,7 @@ const Header = () => {
         <p className="text-[10px] media830:text-sm -mt-5 media830:-mt-8">The Shoe Company</p>
       </div>
       <div className="flex text-[12px] lg:text-2xl font-bold">
-        <Link to='/'>
+        <Link to='/the-shoe-company'>
           <button className="mr-2 media450:mr-4 hover:underline hover:scale-110">Home</button>
         </Link>
         <Link to='/collections'>
