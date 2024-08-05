@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/the-shoe-company/static/css/main.28a0531b.css",
-    "main.js": "/the-shoe-company/static/js/main.320a6f8d.js",
+    "main.js": "/the-shoe-company/static/js/main.6f83bc90.js",
     "static/media/testimonial-background.png": "/the-shoe-company/static/media/testimonial-background.5b910fb84ad6f6937519.png",
     "static/media/how-it-works-image.png": "/the-shoe-company/static/media/how-it-works-image.d8adb5f5bf2e5a8fac1e.png",
     "static/media/about-us-background.png": "/the-shoe-company/static/media/about-us-background.bfda7d034fe0f6b0941b.png",
@@ -19,10 +19,10 @@
     "index.html": "/the-shoe-company/index.html",
     "static/media/youtube.svg": "/the-shoe-company/static/media/youtube.68ee2eb97e4e587935f596b39c806f86.svg",
     "main.28a0531b.css.map": "/the-shoe-company/static/css/main.28a0531b.css.map",
-    "main.320a6f8d.js.map": "/the-shoe-company/static/js/main.320a6f8d.js.map"
+    "main.6f83bc90.js.map": "/the-shoe-company/static/js/main.6f83bc90.js.map"
   },
   "entrypoints": [
     "static/css/main.28a0531b.css",
-    "static/js/main.320a6f8d.js"
+    "static/js/main.6f83bc90.js"
   ]
 }
