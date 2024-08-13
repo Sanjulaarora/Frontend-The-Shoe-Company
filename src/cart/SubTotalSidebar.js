@@ -17,7 +17,7 @@ const SubTotalSidebar = () => {
         <div className="flex flex-col mt-7 media830:mt-10 space-y-7 media830:space-y-10">
           <p className="font-semibold text-[10px] media450:text-md media830:text-xl">Total: Rs.{total} </p>
           <Link to='/payment'>
-            <button className="text-slate-700 font-extrabold media450:font-bold text-[6px] media450:text-sm media830:text-md bg-white h-8 media450:h-10 w-20 media450:w-40 media820:w-52 rounded-md mx-auto hover:scale-110" disabled> Proceed to Payment </button>
+            <button className="text-slate-700 font-extrabold media450:font-bold text-[6px] media450:text-sm media830:text-md bg-white h-8 media450:h-10 w-20 media450:w-40 media820:w-52 rounded-md mx-auto hover:scale-110" disabled = {cart.length === 0}> Proceed to Payment </button>
           </Link>
         </div>
       </section>

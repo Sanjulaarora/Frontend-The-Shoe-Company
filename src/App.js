@@ -2,7 +2,7 @@ import Header from './homePage/Header';
 import HomePage from './pages/HomePage';
 import Collections from './pages/Collections';
 import Cart from './pages/Cart';
-import Payment from './pages/Payment';
+import Payment from './pages/Checkout';
 import Footer from './homePage/Footer';
 import {Switch, Route} from 'react-router-dom';
 
