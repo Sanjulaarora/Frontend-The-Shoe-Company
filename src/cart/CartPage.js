@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { useContext } from 'react';
 import CartFeed from './CartFeed';
 import SubTotalSidebar from './SubTotalSidebar';
@@ -28,4 +28,4 @@ const CartPage = () => {
   )
 }
 
-export default CartPage
+export default CartPage;
