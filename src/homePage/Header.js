@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className="flex justify-between items-center px-8 media450:px-6 md:px-12 fixed w-full max-w-[1440px] mx-auto left-[50%] -translate-x-[50%] bg-black/70 backdrop-blur-sm z-10">
       <div>
-        <img className="w-20 media450:w-24 media830:w-32" src={img1} alt={"logo"}/>
+        <img className="w-20 media450:w-24 media830:w-32" src={img1} alt={"logo"} loading="lazy"/>
         <p className="text-[10px] media830:text-sm -mt-5 media830:-mt-8">The Shoe Company</p>
       </div>
       <div className="flex text-[12px] lg:text-2xl font-bold">

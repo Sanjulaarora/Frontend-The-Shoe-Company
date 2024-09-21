@@ -10,7 +10,7 @@ const Card = ({ item }) => {
   const star= <FaStar className="text-amber-400 text-xs media450:text-base" />;
   return (
     <section className=" bg-[#efefef] text-black m-3 lg:m-5 border-2 border-solid border-[#efefef] rounded-lg p-3 lg:p-5 hover:scale-110 hover:bg-slate-700">
-      <img className="w-40 media450:w-52 mb-4" src={ item.img } alt={item.title}/>
+      <img className="w-40 media450:w-52 mb-4" src={ item.img } alt={item.title} loading="lazy"/>
       <div>
         <h3 className="mb-2 media450:mb-4 text-xs media450:text-base font-semibold lg:font-bold underline">{item.title}</h3>
         <section className="flex justify-between mb-4 font-medium lg:font-semibold">

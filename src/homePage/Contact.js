@@ -15,16 +15,16 @@ const Contact = () => {
         <p className="max-w-[180px] my-4 media450:my-8 text-xs media450:text-base">THE SHOE COMPANY, Dallas, Texas,USA +1 5590 1120 9910</p>
         <div className="flex space-x-2 media450:space-x-4">
           <Link to='/'>
-            <img className="hover:bg-slate-600" src={imgFB} alt="facebook"/>
+            <img className="hover:bg-slate-600" src={imgFB} alt="facebook" loading="lazy"/>
           </Link>
           <Link to='/'>
-            <img className="hover:bg-slate-600" src={imgInsta} alt="instagram"/>
+            <img className="hover:bg-slate-600" src={imgInsta} alt="instagram" loading="lazy"/>
           </Link>
           <Link to='/'>
-            <img className="hover:bg-slate-600" src={imgTwitch} alt="twitch"/>
+            <img className="hover:bg-slate-600" src={imgTwitch} alt="twitch" loading="lazy"/>
           </Link>
           <Link to='/'>
-            <img className="hover:bg-slate-600" src={imgYT} alt="youtube"/>
+            <img className="hover:bg-slate-600" src={imgYT} alt="youtube" loading="lazy"/>
           </Link>
         </div>
       </div>
