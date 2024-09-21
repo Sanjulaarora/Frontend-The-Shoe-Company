@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Search from '../collections/Search';
 import Recommended from '../collections/Recommended';
-import Products from '../collections/Products';
+
+const Products = React.lazy(() => import('../collections/Products'));
+
 
 const Collections = () => {
   return (
     <section id="collections" className="grow">
       <Search />
       <Recommended />
-      <Products />   
+      <Suspense fallback={<div>Loading...</div>}>
+        <Products />   
+      </Suspense>
     </section>
   )
 }
