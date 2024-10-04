@@ -1,16 +1,15 @@
 import React, { Suspense} from 'react';
-import { useContext } from 'react';
-import DataContext from '../context/DataContext';
+import { useSelector } from 'react-redux';
 
 const CartItem = React.lazy(() => import('./CartItem'));
 
 const CartFeed = () => {
-  const { state: { cart }} = useContext(DataContext);
-
+  const {cart} = useSelector((state) => state.allCart);
+  
   return (
     <>
       {cart.map((item) =>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div>Loading...</div>} key={item.id} >
           <CartItem key={item.id} item={item} />
         </Suspense>
       )}

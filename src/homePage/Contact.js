@@ -6,6 +6,7 @@ import imgTwitch from '../images/twitch.svg';
 import imgYT from '../images/youtube.svg';
 
 const Contact = () => {
+
   return (
     <section id="contact" className="px-6 md:px-12 max-w-[1440px] mx-auto flex flex-col lg:flex-row justify-between items-center p-16 scroll-mt-16">
       <div className="mb-10 lg:mb-0 shrink-0 self-start media830:self-center">
@@ -37,4 +38,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;

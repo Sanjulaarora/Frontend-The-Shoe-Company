@@ -2,11 +2,10 @@ import React from 'react';
 import img1 from '../images/shoe-company-logo.png';
 import { FaCartShopping } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
-import { useContext } from 'react';
-import DataContext from '../context/DataContext';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
-  const { state:{ cart } } = useContext(DataContext);
+  const { cart } = useSelector((state) => state.allCart);
 
   return (
     <header className="flex justify-between items-center px-8 media450:px-6 md:px-12 fixed w-full max-w-[1440px] mx-auto left-[50%] -translate-x-[50%] bg-black/70 backdrop-blur-sm z-10">

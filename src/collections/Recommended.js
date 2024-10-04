@@ -1,10 +1,7 @@
 import React from 'react';
-import { useContext } from 'react';
-import DataContext from '../context/DataContext';
 
-const Recommended = () => {
-  const { handleClick } = useContext(DataContext);
-
+const Recommended = ({ handleClick }) => {
+  
   return (
     <section id="recommended" className="px-6 md:px-12 max-w-[1440px] mx-auto">
       <h1 className="text-sm lg:text-2xl font-bold ml-[130px] media450:ml-[250px] media830:ml-[340px]">Recommended</h1>

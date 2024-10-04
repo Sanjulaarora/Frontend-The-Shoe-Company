@@ -4,11 +4,12 @@
   "homepage": "https://Sanjulaarora.github.io/the-shoe-company",
   "private": true,
   "dependencies": {
-    "axios": "^1.7.2",
+    "@reduxjs/toolkit": "^2.2.7",
     "json-server": "^0.17.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
+    "react-redux": "^9.1.2",
     "react-router-dom": "^5.3.0",
     "react-scripts": "5.0.1"
   },

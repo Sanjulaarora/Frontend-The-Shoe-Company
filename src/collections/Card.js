@@ -1,11 +1,11 @@
 import React from 'react';
 import { FaCartPlus, FaCartShopping, FaStar } from 'react-icons/fa6';
-import { useContext } from 'react';
-import DataContext from '../context/DataContext';
+import { useSelector, useDispatch } from 'react-redux';
+import { addToCart, removeFromCart } from '../features/cartSlice';
 
 const Card = ({ item }) => {
-
-  const { state:{ cart } , dispatch } = useContext(DataContext);
+  const { cart } = useSelector((state) => state.allCart);
+  const dispatch = useDispatch();
 
   const star= <FaStar className="text-amber-400 text-xs media450:text-base" />;
   return (
@@ -27,23 +27,13 @@ const Card = ({ item }) => {
             {
               cart.some((p) =>p.id === item.id) ? (
                 <FaCartPlus role="button" 
-                  onClick = {() => {
-                    dispatch({
-                      type: "REMOVE_FROM_CART",
-                      payload: item,
-                    });
-                  }}
+                  onClick = {() => dispatch(removeFromCart(item))}
                   className="w-3 media450:w-5"
                 />
               ) :
               (
                 <FaCartShopping role="button"
-                  onClick = {() => {
-                    dispatch({
-                      type:"ADD_TO_CART",
-                      payload: item,
-                    });
-                  }}
+                  onClick = {() => dispatch(addToCart(item))}
                   className="w-3 media450:w-5"
                 />
               )

@@ -1,10 +1,10 @@
 import React from 'react';
 import Card from './Card';
 
-const Feed = ({searchResult}) => {
+const Feed = ({items}) => {
   return (
     <>
-      { searchResult.map(item =>(
+      { items.map((item) =>(
         <Card key={item.id} item={item} />
       )) }
     </>

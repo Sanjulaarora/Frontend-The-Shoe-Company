@@ -5,6 +5,7 @@ import imgphoto3 from '../images/photo3.png';
 import testiBg from '../images/testimonial-background.png';
 
 const Testimonials = () => {
+
   return (
     <section id="testimonials" className="px-6 md:px-12 max-w-[1440px] mx-auto py-3 media450:py-0 mt-16 media450:mt-24 mb-4 media450:mb-10 scroll-mt-28" style={{backgroundImage:`url(${testiBg})`, loading:'lazy'}}>
       <h2 className="text-xl media450:text-3xl media830:text-6xl font-bold text-center">What People are saying about THE SHOE COMPANY ?</h2>

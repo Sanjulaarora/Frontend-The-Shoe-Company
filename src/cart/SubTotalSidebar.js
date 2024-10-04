@@ -1,15 +1,15 @@
 import React from 'react';
-import { useContext, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import DataContext from '../context/DataContext';
+import { useSelector } from 'react-redux';
 
 const SubTotalSidebar = () => {
-  const { state: { cart } } = useContext(DataContext);
+  const { cart } = useSelector((state) => state.allCart);
   const [total, setTotal] =useState();
   useEffect(() => {
-      setTotal(cart.reduce((acc, curr) => acc + Number(curr.newPrice)*curr.qty, 0));
+    setTotal(cart.reduce((acc, curr) => acc + Number(curr.newPrice), 0));
   }, [cart]);
-
+  
   return (
     <div>
       <section className="w-28 media450:w-56 media1025:w-96 mt-32 bg-slate-700 rounded-md p-4 text-left min-h-[400px] media450:min-h-screen">

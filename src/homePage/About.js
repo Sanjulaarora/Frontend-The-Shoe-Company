@@ -3,6 +3,7 @@ import imgabout from '../images/about-shoe-company.png';
 import imgaboutBg from '../images/about-us-background.png';
 
 const About = () => {
+
   return (
     <section id="about" className="px-6 md:px-12 max-w-[1440px] mx-auto mt-28 mb-8 flex flex-col media830:flex-row space-x-8 pt-[20px] scroll-mt-28">
       <h2 className="text-xl media450:text-3xl my-6 text-center font-bold media830:hidden">About Us!</h2>

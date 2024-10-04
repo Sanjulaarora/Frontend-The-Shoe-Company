@@ -5,6 +5,7 @@ import imgarr2 from '../images/arrow-2.png';
 import imgarr3 from '../images/arrow-3.png';
 
 const HowItWorks = () => {
+
   return (
     <section id="howItWorks" className="px-6 md:px-12 max-w-[1440px] mx-auto pt-20 scroll-mt-5">
       <h1 className="text-xl media450:text-3xl font-bold text-center max-w-md mx-auto mb-10">Have they finally made the perfect workout shoe?</h1>

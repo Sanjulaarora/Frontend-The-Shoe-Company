@@ -3,6 +3,7 @@ import whiteShoe from '../images/white Shoe.png';
 import homeBg from '../images/roadshare.png';
 
 const Home = () => {
+
   return (
     <section id="home" className="bg-contain bg-right media830:bg-contain pt-36 px-6 md:px-12 max-w-[1440px] mx-auto" style={{backgroundImage : `url(${homeBg})`, loading:'lazy'}}>
       <div className="flex flex-col media830:flex-row media830:items-center justify-between max-w-6xl mx-auto ">

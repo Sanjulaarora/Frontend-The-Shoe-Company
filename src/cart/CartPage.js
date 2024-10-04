@@ -1,13 +1,12 @@
 import React, { Suspense } from 'react';
-import { useContext } from 'react';
 import SubTotalSidebar from './SubTotalSidebar';
 import emptyCart from '../images/empty-cart.png';
-import DataContext from '../context/DataContext';
+import { useSelector } from 'react-redux';
 
 const CartFeed = React.lazy(() => import('./CartFeed'));
 
 const CartPage = () => {
-  const { state: { cart }} = useContext(DataContext);
+  const { cart } = useSelector((state) => state.allCart);
   
   return (
     <>

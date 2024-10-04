@@ -1,11 +1,11 @@
 import React from 'react';
 import Feed from './Feed';
 import SideBar from './SideBar';
-import { useContext } from 'react';
-import DataContext from '../context/DataContext';
+import { useSelector } from 'react-redux';
 
-const Products = () => {
-  const { searchResult, handleChange, fetchError, isLoading} = useContext(DataContext);
+const Products = ({ finalProduct, handleChange }) => {
+  const { isLoading, isError} = useSelector((state) => state.products);
+  const items = finalProduct;
 
   return (
     <section id="products" className="px-6 md:px-12 max-w-[1440px] mx-auto mt-8">
@@ -14,12 +14,12 @@ const Products = () => {
         <div className="ml-16 media830:ml-48 mt-24 min-h-96 text-center">
           <p className="text-sm media450:text-lg font-bold">Loading items...</p>
           </div>} 
-        {!isLoading && fetchError && 
+        {!isLoading && isError && 
         <div className="ml-16 media830:ml-48 mt-24 min-h-96 text-center">
-          <p className="text-sm media450:text-lg font-bold text-red-600">{fetchError}</p>
+          <p className="text-sm media450:text-lg font-bold text-red-600">{isError}</p>
         </div>}
-        {!isLoading && !fetchError && (searchResult.length ?
-          <Feed searchResult={searchResult} /> : 
+        {!isLoading && !isError && (items.length ?
+          <Feed items={items} /> : 
           <div className="ml-16 media830:ml-48 mt-24 min-h-96 text-center">
             <p className="text-sm media450:text-lg font-bold">No Such item to display.</p>
           </div>)}
